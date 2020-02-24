@@ -14,4 +14,4 @@ frame = {"World": world_series,
          "Barcelona Rolling Mean (10)": barcelona_rolling_mean_series}
 df = pd.DataFrame(frame)
 
-print(df)
+df.to_csv('../../../data/output/data.csv', sep='|', float_format='%.2f', decimal=',')
